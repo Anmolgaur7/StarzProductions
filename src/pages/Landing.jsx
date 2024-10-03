@@ -4,6 +4,7 @@ import S1 from "../Images/S1.png";
 import S2 from "../Images/S2.png";
 import S3 from "../Images/S3.jpg";
 import AboutUs from "../components/Aboutus";
+import Testimonials from "../components/Testimonials";
 
 function Landing() {
   const images = [S2, S1, S3];
@@ -61,6 +62,7 @@ function Landing() {
 
       {/* About Us Section */}
      <AboutUs />
+     <Testimonials />
     </div>
   );
 }

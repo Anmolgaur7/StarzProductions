@@ -3,7 +3,6 @@ import S5 from "../Images/S5.png";
 import S6 from "../Images/S6.png";
 import S7 from "../Images/S7.png";
 
-import {Zoom,Reveal} from "react-reveal";
 
 function AboutUs() {
   return (
@@ -37,21 +36,15 @@ function AboutUs() {
 
           {/* Image Section */}
           <div className="md:w-1/2 grid grid-cols-2 gap-4 mt-10 md:mt-0">
-           <Zoom triggerOnce>
             <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden">
               <img src={S7} alt="Event 1" className="w-full h-full object-cover" />
             </div>
-            </Zoom>
-            <Zoom triggerOnce>
             <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden">
               <img src={S6} alt="Event 2" className="w-full h-full object-cover" />
             </div>
-            </Zoom>
-            <Reveal triggerOnce>
             <div className="col-span-2 w-full h-72 bg-white shadow-lg rounded-lg overflow-hidden">
               <img src={S5} alt="Event 3" className="w-full h-full object-cover" />
             </div>
-            </Reveal>
           </div>
         </div>
       </div>
