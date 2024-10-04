@@ -11,7 +11,7 @@ function AboutUs() {
         {/* About Us Header with Lines */}
         <div className="flex items-center justify-center mb-6">
           <hr className="border-gray-300 flex-grow" />
-          <h2 className="text-5xl font-bold m-6">About Us</h2>
+          <h2 className="text-4xl font-bold m-6">About Us</h2>
           <hr className="border-gray-300 flex-grow" />
         </div>
 
@@ -36,13 +36,13 @@ function AboutUs() {
 
           {/* Image Section */}
           <div className="md:w-1/2 grid grid-cols-2 gap-4 mt-10 md:mt-0">
-            <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden animate-slideIn">
               <img src={S7} alt="Event 1" className="w-full h-full object-cover" />
             </div>
-            <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden animate-slideIn">
               <img src={S6} alt="Event 2" className="w-full h-full object-cover" />
             </div>
-            <div className="col-span-2 w-full h-72 bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="col-span-2 w-full h-72 bg-white shadow-lg rounded-lg overflow-hidden animate-fadeIn">
               <img src={S5} alt="Event 3" className="w-full h-full object-cover" />
             </div>
           </div>

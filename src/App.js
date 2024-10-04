@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "../src/components/Navbar";
 import Landing from "../src/pages/Landing";
 import AnimatedCursor from "react-animated-cursor";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       />
       <Navbar />
       <Landing />
+      <Footer/>
     </div>
   );
 }

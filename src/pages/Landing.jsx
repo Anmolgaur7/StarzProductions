@@ -5,6 +5,8 @@ import S2 from "../Images/S2.png";
 import S3 from "../Images/S3.jpg";
 import AboutUs from "../components/Aboutus";
 import Testimonials from "../components/Testimonials";
+import Services from "../components/Services";
+import GetInTouch from "../components/Getintouch";
 
 function Landing() {
   const images = [S2, S1, S3];
@@ -62,7 +64,9 @@ function Landing() {
 
       {/* About Us Section */}
      <AboutUs />
+     <Services/>
      <Testimonials />
+     <GetInTouch/>
     </div>
   );
 }

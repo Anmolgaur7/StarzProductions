@@ -99,7 +99,7 @@ function Testimonials() {
         {/* Testimonials Header */}
         <div className="flex items-center justify-center mb-6">
           <hr className="border-gray-300 flex-grow" />
-          <h2 className="text-5xl font-bold m-6">Testimonials</h2>
+          <h2 className="text-4xl font-bold m-6">Testimonials</h2>
           <hr className="border-gray-300 flex-grow" />
         </div>
 

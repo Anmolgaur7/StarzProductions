@@ -11,9 +11,6 @@ html.dark-mode {
   --cursor-color: #FAEBD7
 }
 
-.hero {
-  background-image: url('../public/hero2.webp');
-}
 /* Add keyframes for animations */
 @keyframes fadeIn {
   from {
