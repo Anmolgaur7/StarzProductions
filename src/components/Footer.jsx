@@ -1,8 +1,35 @@
 import React from "react";
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+
+import Logo from "../Images/logo.jpeg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 px-6 md:px-12 flex flex-col md:flex-row justify-between items-start transition-all duration-300 ease-in-out w-full">
+    <footer className="bg-black text-white py-10 px-6 md:px-12 flex flex-col justify-between items-start transition-all duration-300 ease-in-out w-full">
+      {/* Logo Section */}
+      <div className="flex flex-col md:flex-row justify-between items-center w-full mb-8">
+        {/* Logo */}
+        <div className="mb-6 md:mb-0">
+          <img src={Logo} alt="Starz Productions" className="w-32" />
+        </div>
+
+        {/* Social Media Links */}
+        <div className="flex space-x-6">
+          <a href="#" className="hover:text-red-400 transition duration-200">
+            <FaFacebookF size={24} />
+          </a>
+          <a href="#" className="hover:text-red-400 transition duration-200">
+            <FaInstagram size={24} />
+          </a>
+          <a href="#" className="hover:text-red-400 transition duration-200">
+            <FaTwitter size={24} />
+          </a>
+          <a href="#" className="hover:text-red-400 transition duration-200">
+            <FaLinkedinIn size={24} />
+          </a>
+        </div>
+      </div>
+
       {/* Main Footer Sections */}
       <div className="flex flex-col md:flex-row justify-between w-full space-y-8 md:space-y-0 md:space-x-8">
         {/* Contact Information */}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,8 +37,12 @@ function Navbar() {
               isOpen ? "hidden" : "hidden"
             } md:block`}
           >
-            <li className="text-xl text-gray-600 hover:text-gray-800">Home</li>
-            <li className="text-xl text-gray-600 hover:text-gray-800">Services</li>
+            <li className="text-xl text-gray-600 hover:text-gray-800">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="text-xl text-gray-600 hover:text-gray-800">
+              <Link to="/pricing">Pricing</Link>
+            </li>
             <li className="text-xl text-gray-600 hover:text-gray-800">Portfolio</li>
             <li className="text-xl text-gray-600 hover:text-gray-800">Contact</li>
           </ul>
@@ -47,8 +53,12 @@ function Navbar() {
         <div className="animate-fadeIn">
           <div className="md:hidden bg-gray-200 px-4 py-4 rounded-3xl">
             <ul className="space-y-4">
-              <li className="text-xl text-gray-600 hover:text-gray-800">Home</li>
-              <li className="text-xl text-gray-600 hover:text-gray-800">Services</li>
+              <li className="text-xl text-gray-600 hover:text-gray-800">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="text-xl text-gray-600 hover:text-gray-800">
+                <Link to="/pricing">Pricing</Link>
+              </li>
               <li className="text-xl text-gray-600 hover:text-gray-800">Portfolio</li>
               <li className="text-xl text-gray-600 hover:text-gray-800">Contact</li>
             </ul>
@@ -58,5 +68,4 @@ function Navbar() {
     </>
   );
 }
-
 export default Navbar;
