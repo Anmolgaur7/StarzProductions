@@ -5,7 +5,7 @@ const testimonialsData = [
     name: "Neha Belidage",
     date: "2 years ago",
     rating: 5,
-    text: "Sachin is a hardworking and talented guy and he will always ensure you are comfortable during shoots. Good quality work with value for money! Definitely.",
+    text: "Prince is a hardworking and talented guy and he will always ensure you are comfortable during shoots. Good quality work with value for money! Definitely.",
     img: "https://via.placeholder.com/50",
   },
   {
@@ -33,7 +33,7 @@ const testimonialsData = [
     name: "Sita Devi",
     date: "1 year ago",
     rating: 5,
-    text: "I loved the maternity shoot! Sachin made me feel so comfortable and the photos turned out beautiful.",
+    text: "I loved the maternity shoot! Prince made me feel so comfortable and the photos turned out beautiful.",
     img: "https://via.placeholder.com/50",
   },
   {
@@ -47,7 +47,7 @@ const testimonialsData = [
     name: "Pooja Gupta",
     date: "8 months ago",
     rating: 5,
-    text: "Sachin's creativity and professionalism shine through in every shot. I couldn't be happier with the results!",
+    text: "Prince's creativity and professionalism shine through in every shot. I couldn't be happier with the results!",
     img: "https://via.placeholder.com/50",
   },
   {
@@ -75,20 +75,37 @@ const testimonialsData = [
 
 function Testimonials() {
   const [current, setCurrent] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(1);
 
   // Move to the next testimonial every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % Math.ceil(testimonialsData.length / 3));
-    }, 5000); // Change this to adjust speed
+      setCurrent((prev) => (prev + 1) % Math.ceil(testimonialsData.length / itemsToShow));
+    }, 5000);
 
     return () => clearInterval(interval);
+  }, [itemsToShow]);
+
+  // Update the number of testimonials to show based on window size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setItemsToShow(1);
+      } else {
+        setItemsToShow(3);
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Get the testimonials to display based on the current index
   const getCurrentTestimonials = () => {
-    const start = current * 3;
-    return testimonialsData.slice(start, start + 3);
+    const start = current * itemsToShow;
+    return testimonialsData.slice(start, start + itemsToShow);
   };
 
   const displayedTestimonials = getCurrentTestimonials();
@@ -106,15 +123,16 @@ function Testimonials() {
         {/* Testimonials Slider */}
         <div className="overflow-hidden">
           <div
-            className="flex transition- m-1transform duration-500"
-            style={{ transform: `translateX(-${current * (100 / 3)}%)` }}
+            className="flex transition-transform duration-500"
+            style={{ transform: `translateX(-${current * (100 / itemsToShow)}%)` }}
           >
             {testimonialsData.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-gray-100 p-6  rounded-lg shadow-lg w-full md:w-1/3 flex-shrink-0"
+                className="bg-gray-100 p-6 rounded-lg shadow-lg w-full md:w-1/3 flex-shrink-0"
               >
                 <div className="flex items-center justify-center mb-4">
+                  {/* <img src={testimonial.img} alt={testimonial.name} className="rounded-full w-12 h-12 mr-3" /> */}
                 </div>
                 <h3 className="text-xl font-semibold">{testimonial.name}</h3>
                 <p className="text-gray-600 mb-2">{testimonial.date}</p>

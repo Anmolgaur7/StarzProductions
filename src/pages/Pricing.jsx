@@ -56,7 +56,9 @@ function Pricing() {
 
         <button className="bg-black text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-gray-800 transition duration-300 ease-in-out">
           <span>→</span>
-          <span>Contact Me</span>
+          <span>
+            <a href="https://wa.me/+917590088592">Contact Me
+              </a></span>
         </button>
       </div>
     </div>

@@ -6,7 +6,7 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
-import Logo from "../Images/logo.jpeg";
+import Logo from "../Images/logo.jpg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -179,7 +179,7 @@ const Footer = () => {
 
       {/* WhatsApp Chat Button */}
       <a
-        href="https://wa.me/+917208659598" // Change to your WhatsApp number
+        href="https://wa.me/+917590088592" // Change to your WhatsApp number
         className="fixed bottom-16 left-10 bg-green-500 text-white p-4 rounded-full font-extrabold shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-110"
         aria-label="Chat on WhatsApp"
       >

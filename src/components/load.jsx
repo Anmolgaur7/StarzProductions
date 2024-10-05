@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../Images/logo.jpeg'; // Ensure this path is correct
+import Logo from '../Images/logo.jpg'; // Ensure this path is correct
 
 function load() {
   return (
