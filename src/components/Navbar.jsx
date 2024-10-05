@@ -13,7 +13,7 @@ function Navbar() {
           <div className="text-2xl font-bold text-gray-800">
             <Link to='/'>
             <div className="flex justify-center gap-3 items-center">
-            <img src={Logo} alt="Logo" className="w-14 h-14 rounded-full md:w-18 h-18 " />
+            <img src={Logo} alt="Logo" className="w-14 h-14 rounded-full md:w-20 h-20 " />
             Starz Productions
             </div>
             </Link>

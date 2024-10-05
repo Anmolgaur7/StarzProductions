@@ -19,7 +19,7 @@ function Landing() {
   useEffect(() => {
     const imageInterval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(imageInterval);
   }, [images.length]);
@@ -33,7 +33,7 @@ function Landing() {
         setCurrentText((prevText) => (prevText + 1) % texts.length);
         setFade(true); // Trigger fade-in after text changes
       }, 500); // Fade-out duration before changing text
-    }, 3000); // Change text every 3 seconds
+    }, 4000); // Change text every 3 seconds
 
     return () => clearInterval(textInterval);
   }, [texts.length]);
@@ -62,7 +62,7 @@ function Landing() {
             Make it Professional
           </h1>
           <p
-            className={`text-gray-200 font-bold text-7xl md:text-9xl mb-6 transition-opacity duration-500 ease-in-out ${
+            className={`text-gray-200 font-bold text-6xl md:text-9xl mb-6 transition-opacity duration-500 ease-in-out ${
               fade ? "fade-in" : "fade-out"
             }`}
           >
