@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import WeddingImage from "../Images/S3.jpg"; // Use your image paths
 import EngagementImage from "../Images/E1.png";
 import EventImage from "../Images/E2.png";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -63,12 +64,11 @@ function Service() {
                 </p>
                 <div className="flex space-x-6">
                 <button className="bg-red-500 hover rounded-lg p-3">
-                <a
-                    href="#"
+                <Link to="/gallery"
                     className="text-md md:text-lg  text-white  transition-colors duration-300"
                   >
                     SEE ALBUM
-                  </a>
+                  </Link>
                 </button>
                   
                 </div>

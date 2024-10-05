@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import Load from "./components/load";
 import { useState, useEffect } from "react";
 import Pricing from "./pages/Pricing";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
           <Footer />
         </div>

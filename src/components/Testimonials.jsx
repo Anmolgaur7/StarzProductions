@@ -115,11 +115,6 @@ function Testimonials() {
                 className="bg-gray-100 p-6  rounded-lg shadow-lg w-full md:w-1/3 flex-shrink-0"
               >
                 <div className="flex items-center justify-center mb-4">
-                  <img
-                    src={testimonial.img}
-                    alt="User"
-                    className="rounded-full"
-                  />
                 </div>
                 <h3 className="text-xl font-semibold">{testimonial.name}</h3>
                 <p className="text-gray-600 mb-2">{testimonial.date}</p>

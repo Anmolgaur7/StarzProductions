@@ -10,7 +10,9 @@ function Navbar() {
       <nav className="bg-gray-200 shadow-md py-6">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-gray-800">
-            Starz Videography
+            <Link to='/'>
+            Starz Productions
+            </Link>
           </div>
           {/* Hamburger Icon for small screens */}
           <div className="md:hidden">
@@ -43,8 +45,12 @@ function Navbar() {
             <li className="text-xl text-gray-600 hover:text-gray-800">
               <Link to="/pricing">Pricing</Link>
             </li>
-            <li className="text-xl text-gray-600 hover:text-gray-800">Portfolio</li>
-            <li className="text-xl text-gray-600 hover:text-gray-800">Contact</li>
+            <li className="text-xl text-gray-600 hover:text-gray-800">
+            <Link to="/gallery">Gallery</Link>
+              </li>
+            <li className="text-xl text-gray-600 hover:text-gray-800">
+            <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -59,8 +65,12 @@ function Navbar() {
               <li className="text-xl text-gray-600 hover:text-gray-800">
                 <Link to="/pricing">Pricing</Link>
               </li>
-              <li className="text-xl text-gray-600 hover:text-gray-800">Portfolio</li>
-              <li className="text-xl text-gray-600 hover:text-gray-800">Contact</li>
+              <li className="text-xl text-gray-600 hover:text-gray-800">
+                <Link to="/gallery">Gallery</Link>
+                </li>
+              <li className="text-xl text-gray-600 hover:text-gray-800">
+              <Link to="/contact">Contact</Link>
+              </li>
             </ul>
           </div>    
         </div>

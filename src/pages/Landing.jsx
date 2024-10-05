@@ -6,6 +6,7 @@ import AboutUs from "../components/Aboutus";
 import Testimonials from "../components/Testimonials";
 import Services from "../components/Services";
 import GetInTouch from "../components/Getintouch";
+import {Link} from "react-router-dom";
 
 function Landing() {
   const images = [S2, S1, S3];
@@ -67,12 +68,12 @@ function Landing() {
           >
             {texts[currentText]}
           </p>
-          <a
-            href="#"
+          <Link
+            to="/gallery"
             className="bg-red-600 text-white px-6 py-3 m-6 rounded-full text-lg hover:bg-blue-700 transition-colors"
           >
             View Portfolio
-          </a>
+          </Link>
         </div>
       </header>
 
