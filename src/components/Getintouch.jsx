@@ -1,17 +1,20 @@
 import React from "react";
 import H1 from "../Images/hero2.webp";
+import H1Mobile from "../Images/i2.jpg";
 
 function GetInTouch() {
   return (
     <div
       className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center transition-all duration-300 ease-in-out"
-      style={{ backgroundImage: `url(${H1})` }}
+      style={{
+        backgroundImage: `url(${window.innerWidth < 640 ? H1Mobile : H1})`,
+      }}
     >
       {/* Overlay for dimming background image */}
       <div className="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ease-in-out"></div>
 
       {/* Form container */}
-      <div className="relative z-10 bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:w-1/2 w-full max-w-md backdrop-blur-md sm:bg-white sm:bg-opacity-100 transition-all duration-300 ease-in-out">
+      <div className="relative z-10 m-2 opacity-80 bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:w-1/2 w-full max-w-md backdrop-blur-md sm:bg-white sm:bg-opacity-100 transition-all duration-300 ease-in-out">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-gray-800 transition-colors duration-300 ease-in-out ">
           Get In Touch
         </h2>

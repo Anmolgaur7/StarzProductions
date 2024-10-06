@@ -48,17 +48,23 @@ const Footer = () => {
           </h2>
           <p className="mb-2">Email:</p>
           <a
-            href="mailto:support@starzproductions.com"
+            href="mailto:starzproductionofficial@gmail.com"
             className="hover:text-red-400 transition duration-200"
           >
-            Starzproductionofficial@gmail.com
+            starzproductionofficial@gmail.com
           </a>
           <p className="mb-2 mt-2">Phone:</p>
           <a
-            href="tel:+917208659598"
+            href="tel:+917590088592"
             className="hover:text-red-400 transition duration-200"
           >
             +91 7590088592
+          </a>
+          <a
+            href="tel:+917580088592"
+            className="hover:text-red-400 transition duration-200"
+          >
+            +91 7580088592
           </a>
         </div>
 

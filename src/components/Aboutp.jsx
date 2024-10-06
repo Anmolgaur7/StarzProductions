@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../Images/p2.jpg"; // Replace with your image path
+import aboutImage from "../Images/S7.png"; // Replace with your image path
 
 function Aboutp() {
   return (

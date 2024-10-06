@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../Images/E2.png";
+import aboutImage from "../Images/o3.jpg";
 import W1 from "../Images/w1.jpg"; // Replace with your image path // Replace with your image path
 
 const PhotographyPackage = () => {
