@@ -26,7 +26,7 @@ function Aboutp() {
         transform transition-transform duration-700 ease-in-out hover:-translate-y-2"
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">
-          Hello! We Are Starz Photography Production House
+          Hello! We Are Starz Productions
         </h2>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
         I am Prince, an experienced Event Manager and Founder/CEO of Starz Productions. While I manage events with precision and creativity, Starz Productions boasts a talented team of professional photographers who capture your special moments with elegance and expertise. Over the years, I have coordinated numerous events, working closely with our team to ensure every occasion, whether it's an engagement, pre-wedding, or wedding, is not only organized flawlessly but also beautifully documented by our skilled photographers.

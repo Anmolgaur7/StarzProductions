@@ -9,13 +9,6 @@ const testimonialsData = [
     img: "https://via.placeholder.com/50",
   },
   {
-    name: "Neha Belidage",
-    date: "2 years ago",
-    rating: 5,
-    text: "Prince is a hardworking and talented guy and he will always ensure you are comfortable during shoots. Good quality work with value for money! Definitely.",
-    img: "https://via.placeholder.com/50",
-  },
-  {
     name: "Amar Vhadade",
     date: "2 years ago",
     rating: 5,
