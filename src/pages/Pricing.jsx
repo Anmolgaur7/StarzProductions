@@ -42,7 +42,7 @@ function Pricing() {
         <div className="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center">
           {/* Text */}
           <h1 className="text-white text-center text-2xl md:text-4xl lg:text-5xl font-bold">
-            Wedding Photography & Videography Packages
+            Wedding Photography Packages & Event Management
           </h1>
         </div>
       </div>

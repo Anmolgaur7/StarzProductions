@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -10,31 +10,8 @@ import Logo from "../Images/logo.jpg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Show or hide the button based on scroll position
-  const toggleVisibility = () => {
-    if (window.scrollY > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  // Smooth scroll to top function
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
-  }, []);
-
   return (
-    <footer className="bg-black text-white py-10 px-6 md:px-12 flex flex-col justify-between items-start transition-all duration-300 ease-in-out w-full">
+    <footer className="bg-black  text-white py-10 px-6 md:px-15 flex flex-col justify-between items-start transition-all duration-300 ease-in-out w-full">
       {/* Logo Section */}
       <div className="flex flex-col md:flex-row justify-between items-center w-full mb-8">
         {/* Logo */}
@@ -166,21 +143,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-16 right-10 bg-red-500 text-white p-4 rounded-full font-extrabold shadow-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-110"
-          aria-label="Scroll to Top"
-        >
-          ↑
-        </button>
-      )}
-
       {/* WhatsApp Chat Button */}
       <a
         href="https://wa.me/+917590088592" // Change to your WhatsApp number
-        className="fixed bottom-16 left-10 bg-green-500 text-white p-4 rounded-full font-extrabold shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-110"
+        className="fixed bottom-4 left-3 bg-green-500 text-white p-4 rounded-full font-extrabold shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-110"
         aria-label="Chat on WhatsApp"
       >
         <FaWhatsapp size={24} />

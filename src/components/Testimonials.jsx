@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 
 const testimonialsData = [
   {
+    name: "Anjali Verma",
+    date: "4 months ago",
+    rating: 5,
+    text: "Prince and the Starz Productions team made our corporate event seamless. The event management was flawless, and the photography captured the essence perfectly.",
+    img: "https://via.placeholder.com/50",
+  },
+  {
     name: "Neha Belidage",
     date: "2 years ago",
     rating: 5,
@@ -27,13 +34,6 @@ const testimonialsData = [
     date: "1 year ago",
     rating: 5,
     text: "The team at Starz Productions made our wedding unforgettable. Their attention to detail and professionalism were top-notch!",
-    img: "https://via.placeholder.com/50",
-  },
-  {
-    name: "Sita Devi",
-    date: "1 year ago",
-    rating: 5,
-    text: "I loved the maternity shoot! Prince made me feel so comfortable and the photos turned out beautiful.",
     img: "https://via.placeholder.com/50",
   },
   {
@@ -69,6 +69,27 @@ const testimonialsData = [
     date: "1 month ago",
     rating: 5,
     text: "Starz Productions exceeded my expectations! Their attention to detail is unmatched.",
+    img: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Vivek Malhotra",
+    date: "2 months ago",
+    rating: 5,
+    text: "Starz Productions handled our wedding photography and event management. From the decorations to the timing, everything was on point. Prince truly goes above and beyond.",
+    img: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Shreya Patel",
+    date: "3 weeks ago",
+    rating: 5,
+    text: "Prince's event management skills are just as amazing as his photography. He ensured every part of our event was well-coordinated and captured beautifully. Highly recommend!",
+    img: "https://via.placeholder.com/50",
+  },
+  {
+    name: "Rahul Nanda",
+    date: "1 week ago",
+    rating: 5,
+    text: "Starz Productions delivered an exceptional event management experience for our engagement party. Everything was well-organized, and the photos were stunning!",
     img: "https://via.placeholder.com/50",
   },
 ];

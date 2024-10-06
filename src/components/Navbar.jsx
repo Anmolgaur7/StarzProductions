@@ -14,7 +14,7 @@ function Navbar() {
             <Link to='/'>
             <div className="flex justify-center gap-3 items-center">
             <img src={Logo} alt="Logo" className="w-14 h-14 rounded-full md:w-20 md:h-20 " />
-            Starz Productions
+          STARZ PRODUCTIONS
             </div>
             </Link>
           </div>

@@ -10,7 +10,8 @@ function AboutUs() {
         {/* About Us Header with Lines */}
         <div className="flex items-center justify-center mb-6">
           <hr className="border-gray-300 flex-grow" />
-          <h2 className="text-4xl font-bold m-6">About Us</h2> {/* Increased text size */}
+          <h2 className="text-4xl font-bold m-6">About Us</h2>{" "}
+          {/* Increased text size */}
           <hr className="border-gray-300 flex-grow" />
         </div>
 
@@ -18,17 +19,29 @@ function AboutUs() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Text Content */}
           <div className="md:w-1/2 text-left">
-            <h3 className="text-3xl font-semibold italic mb-4"> {/* Increased text size */}
-              Because every picture tells a story, let me help you tell yours.
+            <h3 className="text-4xl font-semibold italic mb-4">
+              {" "}
+              {/* Increased text size */}
+              Every picture tells a story, and we're here to help you tell
+              yours.
             </h3>
-            <p className="text-gray-600 text-lg mb-6 font-medium"> {/* Increased text size */}
-              Starz Production is a well-known production house that ensures
-              your moments are captured with elegance. From weddings and engagements, we are here to make every occasion memorable. {/* Removed maternity shoots */}
+            <p className="text-gray-600 text-xl mb-6 font-medium">
+              {" "}
+              {/* Increased text size */}
+              Starz Production is not just a production house but also an event
+              management company that ensures your moments are captured with
+              grace and perfection. From weddings to engagements, we are
+              dedicated to making every event unforgettable.
             </p>
-            <p className="text-gray-600 text-lg mb-6 font-medium"> {/* Increased text size */}
-              We offer clear pricing structures with pre-defined goals and timelines, making us the right choice for your special events.
+            <p className="text-gray-600 text-xl mb-6 font-medium">
+              {" "}
+              {/* Increased text size */}
+              Our transparent pricing structures and clearly defined goals and
+              timelines make us the perfect choice for your special occasions.
             </p>
-            <h1 className="underline text-black text-lg"> {/* Increased text size */}
+            <h1 className="underline text-black text-xl">
+              {" "}
+              {/* Increased text size */}
               Read More
             </h1>
           </div>
@@ -36,13 +49,25 @@ function AboutUs() {
           {/* Image Section */}
           <div className="md:w-1/2 grid grid-cols-2 gap-4 mt-10 md:mt-0">
             <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden animate-slideIn">
-              <img src={S7} alt="Event 1" className="w-full h-full object-cover" />
+              <img
+                src={S7}
+                alt="Event 1"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="w-full h-64 bg-white shadow-lg rounded-lg overflow-hidden animate-slideIn">
-              <img src={S6} alt="Event 2" className="w-full h-full object-cover" />
+              <img
+                src={S6}
+                alt="Event 2"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="col-span-2 w-full h-72 bg-white shadow-lg rounded-lg overflow-hidden animate-fadeIn">
-              <img src={S5} alt="Event 3" className="w-full h-full object-cover" />
+              <img
+                src={S5}
+                alt="Event 3"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

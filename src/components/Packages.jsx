@@ -86,7 +86,7 @@ const PhotographyPackage = () => {
       {/* Other Events Package Section */}
       <div className="flex items-center justify-center mb-6 mt-10">
         <hr className="border-gray-300 flex-grow" />
-        <h2 className="text-4xl font-bold m-6">Other Events</h2>{" "}
+        <h2 className="text-4xl font-bold m-6">Events management</h2>{" "}
         {/* Increased text size */}
         <hr className="border-gray-300 flex-grow" />
       </div>
@@ -94,37 +94,39 @@ const PhotographyPackage = () => {
       <div className="flex flex-col lg:flex-row items-center">
         {/* Left Section: Package Details */}
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-          <div className="bg-white rounded-lg shadow-lg p-8 transition-transform duration-300 hover:scale-105">
-            <h3 className="text-xl font-bold mb-4 border-b-2 border-gray-300 pb-2">
-              For Corporate Events
-            </h3>
-            <ul className="mb-6 text-gray-700 text-base">
-              <li>• Professional Photography for Corporate Functions</li>
-              <li>• Event Coverage (Min 4 - 8 Hours)</li>
-              <li>• Video Highlights and Edits</li>
-              <li>• Total Work Duration 4 - 8 Hours</li>
-            </ul>
+  <div className="bg-white rounded-lg shadow-lg p-8 transition-transform duration-300 hover:scale-105">
+    <h3 className="text-xl font-bold mb-4 border-b-2 border-gray-300 pb-2">
+      For Corporate Events
+    </h3>
+    <ul className="mb-6 text-gray-700 text-base">
+      <li>• Complete Event Planning and Management</li>
+      <li>• Coordination of Venue, Catering, and Logistics</li>
+      <li>• On-site Supervision and Execution</li>
+      <li>• Professional Photography and Videography (Optional)</li>
+      <li>• Total Event Duration 4 - 8 Hours</li>
+    </ul>
 
-            <h3 className="text-xl font-bold mb-4 border-b-2 border-gray-300 pb-2">
-              For Birthday Parties
-            </h3>
-            <ul className="mb-6 text-gray-700 text-base">
-              <li>• Candid Photography (With Soft Copies)</li>
-              <li>• Thematic Photoshoots</li>
-              <li>• Event Highlights (Video)</li>
-              <li>• Total Work Duration 4 - 6 Hours</li>
-            </ul>
+    <h3 className="text-xl font-bold mb-4 border-b-2 border-gray-300 pb-2">
+      For Birthday Parties
+    </h3>
+    <ul className="mb-6 text-gray-700 text-base">
+      <li>• Thematic Event Planning and Decorations</li>
+      <li>• Coordination with Performers, Caterers, and Photographers</li>
+      <li>• Candid Photography and Event Highlights (Optional)</li>
+      <li>• Total Event Duration 4 - 6 Hours</li>
+    </ul>
 
-            <h3 className="text-xl font-bold mb-4 border-b-2 border-gray-300 pb-2">
-              For Other Celebrations
-            </h3>
-            <ul className="text-gray-700 text-base">
-              <li>• Family Gatherings and Anniversaries</li>
-              <li>• Custom Packages Available</li>
-              <li>• Total Work Duration Flexible</li>
-            </ul>
-          </div>
-        </div>
+    <h3 className="text-xl font-bold mb-4 border-b-2 border-gray-300 pb-2">
+      For Other Celebrations
+    </h3>
+    <ul className="text-gray-700 text-base">
+      <li>• Family Gatherings, Anniversaries, and Custom Events</li>
+      <li>• End-to-End Event Planning and Coordination</li>
+      <li>• Flexible Duration Based on Event Needs</li>
+    </ul>
+  </div>
+</div>
+
 
         {/* Right Section: Image for Other Events */}
         <div className="lg:w-1/2 w-full flex justify-center">

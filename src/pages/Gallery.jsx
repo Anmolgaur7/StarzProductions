@@ -10,9 +10,13 @@ import i9 from "../Images/S7.png";
 import image from "../Images/h2.gif";
 import O1 from "../Images/o1.jpg";
 import O2 from "../Images/o3.jpg";
+import G1 from "../Images/g1.jpg";
+import G2 from "../Images/g2.jpg";
+import G3 from "../Images/g3.jpg";
+import G4 from "../Images/g8.png";
 
 // Array of images
-const images = [i1, i2,O1,O2,i4, i5, i6, i7, i8, i9];
+const images = [i1, i2,O1,O2,i4, i5, i6, i7, i8, i9, G1, G2, G3, G4];
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -63,7 +67,7 @@ const Gallery = () => {
               {/* Setting object-cover and max height to avoid overflow */}
               <img
                 src={image}
-                alt={`Gallery image ${index + 1}`}
+                alt={`Gallery`}
                 className="w-full h-72 object-cover transform transition duration-500 group-hover:scale-110 group-hover:shadow-lg"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">

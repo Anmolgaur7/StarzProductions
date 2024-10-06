@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import WeddingImage from "../Images/S3.jpg"; // Use your image paths
 import EngagementImage from "../Images/E1.png";
 import EventImage from "../Images/E2.png";
+import eventi2 from "../Images/g3.jpg";
 import { Link } from "react-router-dom";
 
 const slides = [
@@ -20,6 +21,11 @@ const slides = [
     description: "We make every event unforgettable with stunning photography.",
     image: EventImage,
   },
+  {
+    title: "Event Management",
+    description: "We make every event unforgettable with stunning Management.",
+    image: eventi2,
+  }
 ];
 
 function Service() {
