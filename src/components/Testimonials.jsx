@@ -12,7 +12,7 @@ const testimonialsData = [
     name: "Amar Vhadade",
     date: "2 years ago",
     rating: 5,
-    text: "Excellent Photography Service & the best quality of pictures! Overall I am totally satisfied with Starz Productions. He is very professional and will make the best.",
+    text: "Excellent Photography Service & the best quality of pictures! Overall I am totally satisfied with Starz Productions. They are very professional and will make the best.",
     img: "https://via.placeholder.com/50",
   },
   {
